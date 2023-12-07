@@ -1,0 +1,121 @@
+/* Common styles for all viewports */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align all text */
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Styles for mobile viewport */
+@media only screen and (max-width: 600px) {
+    .tablet, .desktop {
+        display: none;
+    }
+}
+
+/* Styles for tablet viewport */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .mobile, .desktop {
+        display: none;
+    }
+}
+
+/* Styles for desktop viewport */
+@media only screen and (min-width: 1025px) {
+    .mobile, .tablet {
+        display: none;
+    }
+}
+
+/* Additional styles */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease; /* Animation for fade-in effect */
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease; /* Animation for fade-in effect */
+}
+
+ol {
+    color: #2c3e50;
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    animation: fadeInUp 1s ease; /* Animation for fade-in effect */
+}
+
+.testimonial-rail {
+    overflow-x: auto; /* Enable horizontal scroll */
+    white-space: nowrap; /* Prevent line breaks */
+    padding-bottom: 1rem;
+}
+
+.testimonial {
+    flex: 0 0 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-right: 1rem;
+    animation: fadeIn 1s ease; /* Animation for fade-in effect */
+}
+
+.author {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-rail {
+    margin-top: 2rem;
+}
+
+.image-scroll {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    padding-bottom: 1rem;
+}
+
+.scroll-image {
+    width: 200px; /* Fixed width for each image */
+    height: 150px; /* Fixed height for each image */
+    margin-right: 1rem;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+
+.banner-image {
+    width: 20%; /* Make the image take up the full width of the header */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}

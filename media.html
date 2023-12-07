@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akhil's Tea Estate</title>
+  <link rel="stylesheet" href="App.css" />
+  <link rel="stylesheet" href="CSS/media.css">
+
+</head>
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/newlogo.png" width="8%" height="8%" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Our&nbsp;Team</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact&nbsp;Us</a></li>
+        <li><a href="cart.html"></a><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+      </ul>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="banner2" class=""section-m1>
+    <h4>Product Demo And Media Section</h4>
+    <h2>Explore <span>trailers </span>and product demos</h2>
+    <br>
+    <button class="normal">Explore more</button>
+  </section>
+
+
+<br>
+
+<div class="video-container">
+  <video class="video" controls poster="./img/banner/coffee-grinder-still-life-tom-mc-nemar.jpg">
+    <source src="Concordia Xpress Touch 0 Promo Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+  <video class="video" controls poster="./img/banner/cozy-morning-fresh-coffee-newspaper-generative-ia_209190-2673.avif">
+      <source src="City Vending Coffee Machine Promo Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <video class="video" controls poster="./img/banner/coffee-grinder-still-life-tom-mc-nemar.jpg">
+      <source src="Concordia Xpress Touch 0 Promo Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+<div class="testimonial-section">
+  <h2>User Testimonials</h2>
+  <div class="audio-testimonial">
+      <audio controls>
+          <source src="alee kinder - rain to snow  lyrics  FULL SONG.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <p>"I absolutely love the videos on this platform! The content is engaging, and the quality is top-notch. It has become my go-to place for informative and entertaining videos."</p>
+  </div>
+
+  <div class="audio-testimonial">
+      <audio controls>
+          <source src="alee kinder - rain to snow  lyrics  FULL SONG.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <p>The variety of topics covered in the videos is fantastic. The testimonials from other users convinced me to give it a try, and I'm glad I did. Highly recommended for anyone looking for quality video content!</p>
+  </div>
+
+
+
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign up for newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal pill-button">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img src="img/Akhil’s coffee grinders.png" width="7%" height="7%" alt="">
+      <p>&copy; Copyright 2099. All Rights Reserved.</p>
+      <p><a href="mailto:c0919343@mylambton.ca">Request information</a></p>
+      <p><strong>AKHIL ANTONY JOSEPH</strong> - C0919343</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    function playVideo(videoSource) {
+    var screen = document.getElementById('screen');
+    screen.innerHTML = '<video controls autoplay><source src="' + videoSource + '" type="video/mp4"></video>';
+}
+
+</script>
+
+  <script src="App.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.video {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.video:hover {
+    transform: scale(1.1);
+}
+
+
+
+.testimonial-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-testimonial {
+    margin-bottom: 20px;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
